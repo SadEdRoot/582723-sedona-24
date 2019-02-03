@@ -20,7 +20,60 @@
   </header>
   <main>
     <section class="filter">
-      <form action=""></form>
+      <form action="https://echo.htmlacademy.ru">
+        <fieldset>
+         <legend>инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">
+                Бассейн
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">
+                Парковка
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="wifi" id="filter-suavecito">
+              <label for="filter-suavecito">
+                Wi-Fi
+              </label>
+            </li>
+          </ul> 
+       </fieldset>
+      <fieldset>
+        <legend>тип жилья::</legend>  
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">
+                Гостиница
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">
+                Мотель
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">
+                Апартаменты
+              </label>
+            </li>
+          </ul> 
+       </fieldset>
+       <fieldset>
+         <legend>Стоимость в сутки (Р):</legend>
+         <input type="number" class="">
+         <input type="number" class="">
+       </fieldset>
+         <button type="submit" class="filter__button">показать</button>
+      </form>
     </section>
     <section class="sort">
       <p class="">найдено <span class="">4</span></p> <span class="">сортировка</span>
@@ -33,7 +86,7 @@
     <section class="content">
       <div class="hotel-block">
         <h3>amara resort & spa</h3> 
-        <img src="img/Hotel_1.jpg" alt="фото отеля"> 
+        <img src="img/hotel_1.jpg" alt="фото отеля"> 
         <span class="type">гостиница</span> 
         <span class="price">от 4000 р.</span> 
         <a href="" class="button detail">подробнее</a> 
@@ -48,7 +101,7 @@
       </div>
       <div class="hotel-block">
         <h3>desert quail inn</h3>
-        <img src="img/Hotel_2.jpg" alt="фото отеля">
+        <img src="img/hotel_2.jpg" alt="фото отеля">
         <span class="type">мотель</span>
         <span class="price">от 3000 р.</span>
         <a href="" class="button detail">подробнее</a>
@@ -62,7 +115,7 @@
       </div>
       <div class="hotel-block">
         <h3>Villas at Poco Diablo</h3>
-        <img src="img/Hotel_3.jpg" alt="фото отеля">
+        <img src="img/hotel_3.jpg" alt="фото отеля">
         <span class="type">апартаменты</span>
         <span class="price">от 2000 р.</span>
         <a href="" class="button detail">подробнее</a>
@@ -83,7 +136,8 @@
       <li><a class="social-button" href="#">Youtube</a></li>
     </ul>
     <p class="footer-copyright"> website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_academy.png" alt="Логотип Академии"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      </a>
     </p>
   </footer>
 </body>

@@ -32,7 +32,7 @@
             <span>- №1 -</span>
             <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img src="img/Layer%2010.jpg" alt="фото города">
+          <img src="img/view_1_town.jpg" alt="фото города">
         </div>
 
         <div class="features">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div>
-          <img src="img/Layer%205.jpg" alt="мост дьявола">
+          <img src="img/view_2_bridge.jpg" alt="мост дьявола">
           <div>
             <h3>там есть мост дьявола</h3>
             <span>- №2 -</span>
@@ -84,7 +84,29 @@
         <span class="button">поиск гостиницы в седоне</span>
       </div>
       <div class="map">
-          <form action=""></form>
+        <form class="order" action="https://echo.htmlacademy.ru">        
+          <fieldset>
+            <ul>
+              <li>
+                <label for="checkin_date">Дата заезда:</label>
+                <input type="date" id="checkin_date">
+              </li>
+              <li>
+                <label for="checkout_date">Дата выезда:</label>
+                <input type="date" id="checkout_date">
+              </li>
+              <li>
+                <label for="adult">взрослые:</label>
+                <input type="number" id="adult">
+              </li>
+              <li>
+                <label for="children">дети:</label>
+                <input type="number" id="children">                  
+              </li>
+              <button type="submit" class="order__button">найти</button>
+            </ul>
+          </fieldset>
+        </form>
       </div>
     </section>
     </main>
