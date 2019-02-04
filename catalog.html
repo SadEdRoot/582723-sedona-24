@@ -20,7 +20,7 @@
   </header>
   <main>
     <section class="filter">
-      <form action="https://echo.htmlacademy.ru">
+      <form action="https://echo.htmlacademy.ru"  method="post">
         <fieldset>
          <legend>инфраструктура:</legend>
           <ul>
@@ -42,10 +42,10 @@
                 Wi-Fi
               </label>
             </li>
-          </ul> 
+          </ul>
        </fieldset>
       <fieldset>
-        <legend>тип жилья::</legend>  
+        <legend>тип жилья:</legend>
           <ul>
             <li>
               <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -65,12 +65,18 @@
                 Апартаменты
               </label>
             </li>
-          </ul> 
+          </ul>
        </fieldset>
        <fieldset>
          <legend>Стоимость в сутки (Р):</legend>
-         <input type="number" class="">
-         <input type="number" class="">
+         <input type="number" class="" id="price-from">
+         <label for="price-from">
+            от
+          </label>
+         <input type="number" class="" id="price-to">
+         <label for="price-to">
+            до
+          </label>
        </fieldset>
          <button type="submit" class="filter__button">показать</button>
       </form>
@@ -80,42 +86,42 @@
       <button class="">по цене</button>
       <button class="">по типу</button>
       <button class="">по рейтингу</button>
-      <button class="icon-dir"></button>
-      <button class="icon-dir"></button>
+      <button class="icon-dir"><span class="visually-hidden">по убыванию</span></button>
+      <button class="icon-dir"><span class="visually-hidden">по возрастанию</span></button>
     </section>
     <section class="content">
       <div class="hotel-block">
-        <h3>amara resort & spa</h3> 
-        <img src="img/hotel_1.jpg" alt="фото отеля"> 
-        <span class="type">гостиница</span> 
-        <span class="price">от 4000 р.</span> 
-        <a href="" class="button detail">подробнее</a> 
+        <h3>amara resort & spa</h3>
+        <img src="img/hotel_1.jpg" alt="amara resort & spa">
+        <span class="type">гостиница</span>
+        <span class="price">от 4000 р.</span>
+        <a href="" class="button detail">подробнее</a>
         <a href="" class="button booking">забронировать</a>
-        <div class=""> 
-          <span class="rating"></span> 
-          <span class="rating"></span> 
-          <span class="rating"></span> 
-          <span class="rating"></span> 
-        </div> 
-        <span class="button">рейтинг: 8,5</span> 
+        <div class="">
+          <span class="rating"></span>
+          <span class="rating"></span>
+          <span class="rating"></span>
+          <span class="rating"></span>
+        </div>
+        <span class="button">рейтинг: 8,5</span>
       </div>
       <div class="hotel-block">
         <h3>desert quail inn</h3>
-        <img src="img/hotel_2.jpg" alt="фото отеля">
+        <img src="img/hotel_2.jpg" alt="desert quail inn">
         <span class="type">мотель</span>
         <span class="price">от 3000 р.</span>
         <a href="" class="button detail">подробнее</a>
         <a href="" class="button booking">забронировать</a>
         <div class="">
           <span class="rating"></span>
-          <span class="rating"></span> 
           <span class="rating"></span>
-        </div> 
-        <span class="button">рейтинг: 8,9</span> 
+          <span class="rating"></span>
+        </div>
+        <span class="button">рейтинг: 8,9</span>
       </div>
       <div class="hotel-block">
         <h3>Villas at Poco Diablo</h3>
-        <img src="img/hotel_3.jpg" alt="фото отеля">
+        <img src="img/hotel_3.jpg" alt="Villas at Poco Diablo">
         <span class="type">апартаменты</span>
         <span class="price">от 2000 р.</span>
         <a href="" class="button detail">подробнее</a>
