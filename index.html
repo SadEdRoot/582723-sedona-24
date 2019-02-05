@@ -88,25 +88,25 @@
           <ul>
             <li>
               <label for="checkin_date">Дата заезда:</label>
-              <input type="text" id="checkin_date">
-              <button class="order__calendar-icon"></button>
+              <input name="checkin_date" type="text" id="checkin_date" placeholder="24 апреля 2017" value="24 апреля 2017">
+              <button aria-label="Выбрать дату заезда" class="order__calendar-icon"></button>
             </li>
             <li>
               <label for="checkout_date">Дата выезда:</label>
-              <input type="text" id="checkout_date">
-              <button class="order__calendar-icon"></button>
+              <input name="checkout_date" type="text" id="checkout_date" placeholder="4 июля 2017" value="4 июля 2017">
+              <button aria-label="Выбрать дату выезда" class="order__calendar-icon"></button>
             </li>
             <li>
               <label for="adult">взрослые:</label>
-              <input type="number" id="adult">
-              <button class="order__adult-minus icon-minus">-</button>
-              <button class="order__adult-plus icon-plus">+</button>
+              <input name="adult" type="number" id="adult" placeholder="2" value="2">
+              <button aria-label="Уменьшить количество взрослых" type="button" class="order__adult-minus icon-minus">-</button>
+              <button aria-label="Увеличить количество взрослых" type="button" class="order__adult-plus icon-plus">+</button>
             </li>
             <li>
               <label for="children">дети:</label>
-              <input type="number" id="children">
-              <button class="order__children-minus icon-minus">-</button>
-              <button class="order__children-plus icon-plus">+</button>
+              <input name="children" type="number" id="children" placeholder="0" value="0">
+              <button aria-label="Уменьшить количество детей" type="button" class="order__children-minus icon-minus">-</button>
+              <button aria-label="Увеличить количество детей" type="button" class="order__children-plus icon-plus">+</button>
             </li>
             <button type="submit" class="order__button">найти</button>
           </ul>
@@ -127,9 +127,9 @@
 
       <p class="footer-copyright">
         website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_academy.png" alt="Логотип Академии"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          </a>
       </p>
-
     </footer>
   </body>
 </html>
