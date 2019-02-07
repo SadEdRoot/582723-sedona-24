@@ -11,7 +11,7 @@
     <header class="main-header">
       <a class="logo" href=""><img src="img/logo.png" alt="City of Sedona"></a>
       <nav class="main-menu">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="">информация</a></li>
           <li><a href="">фото и видео</a></li>
           <li><a href="">карта штата</a></li>
@@ -21,18 +21,18 @@
     </header>
     <main class="container">
       <div class="intro">
-        <h1 class="hidden">City of Sedona</h1>
+        <h1 class="visually-hidden">City of Sedona</h1>
         <img src="img/welcome.png" alt="welcome to the gorgeous">
       </div>
       <section class="content">
-        <div class="">
-          <p>седона - небольшой городок в аризоне заслуживающий большего!</p>
-          <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
+        <div class="about">
+          <p class="about__main">седона - небольшой городок в аризоне заслуживающий большего!</p>
+          <p class="about__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
         </div>
-        <div>
-          <div class="">
-            <h3>Настояший городок</h3>
-            <span>- №1 -</span>
+        <div class="">
+          <div class="board board__blue">
+            <h3 class="board__header">Настояший городок</h3>
+            <p>- №1 -</p>
             <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img src="img/view_1_town.jpg" alt="фото города">
@@ -40,41 +40,41 @@
 
         <div class="features">
           <div class="feat">
-            <h3>жильё</h3>
-            <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="feat__header">жильё</h3>
+            <p class="feat__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="feat">
-            <h3>еда</h3>
-            <p>всегда заказывайте фирменный бурге, вы не разочаруетес!</p>
+            <h3 class="feat__header">еда</h3>
+            <p class="feat__text">всегда заказывайте фирменный бурге, вы не разочаруетес!</p>
           </div>
           <div class="feat">
-            <h3>сувениры</h3>
-            <p>не только китайского, но и местного производства!</p>
+            <h3 class="feat__header">сувениры</h3>
+            <p class="feat__text">не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div>
           <img src="img/view_2_bridge.jpg" alt="мост дьявола">
-          <div>
-            <h3>там есть мост дьявола</h3>
-            <span>- №2 -</span>
+          <div class="board board__blue">
+            <h3 class="board__header">там есть мост дьявола</h3>
+            <p>- №2 -</p>
             <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
           </div>
         </div>
 
         <div>
-          <div>
-              <h3>небольшая площадь</h3>
-              <span>- №3 -</span>
+          <div class="board board__grey">
+              <h3 class="board__header board__header__black">небольшая площадь</h3>
+              <p>- №3 -</p>
               <p>все достопримечательности находятся очень близко</p>
           </div>
-          <div>
-              <h3>красивая дорога</h3>
-              <span>- №4 -</span>
+          <div class="board board__grey">
+              <h3 class="board__header board__header__black">красивая дорога</h3>
+              <p>- №4 -</p>
               <p>ехать в седону из лас-вегаса совсем не скучно!</p>
           </div>
-          <div>
-              <h3>мало туристов</h3>
-              <span>- №5 -</span>
+          <div class="board board__grey">
+              <h3 class="board__header board__header__black">мало туристов</h3>
+              <p>- №5 -</p>
               <p>большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
@@ -82,13 +82,13 @@
 
     <section class="hotel-form">
       <div class="form-title">
-        <h3>заинтересовались?</h3>
-        <p>укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <span class="button">поиск гостиницы в седоне</span>
+        <h3 class="form-title__header">заинтересовались?</h3>
+        <p class="form-title__text">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="form-title__button"><span>поиск гостиницы в седоне</span></button>
       </div>
       <div class="map">
         <form class="order" action="https://echo.htmlacademy.ru"  method="post">
-          <ul>
+          <ul >
             <li>
               <label for="checkin_date">Дата заезда:</label>
               <input name="checkin_date" type="text" id="checkin_date" placeholder="24 апреля 2017" value="24 апреля 2017">
@@ -111,7 +111,7 @@
               <button aria-label="Уменьшить количество детей" type="button" class="order__children-minus icon-minus">-</button>
               <button aria-label="Увеличить количество детей" type="button" class="order__children-plus icon-plus">+</button>
             </li>
-            <button type="submit" class="order__button">найти</button>
+            <button type="submit" class="order__button"><span>найти</span></button>
           </ul>
         </form>
       </div>
@@ -120,7 +120,7 @@
 
     <footer>
 
-      <p>#visitsedona</p>
+      <p class="hashtag">#visitsedona</p>
 
       <ul class="footer-social">
         <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>

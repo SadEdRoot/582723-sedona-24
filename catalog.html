@@ -13,7 +13,7 @@
   <header class="main-header">
     <a class="logo" href="index.html"><img src="img/logo.png" alt="City of Sedona"></a>
     <nav class="main-menu">
-      <ul>
+      <ul class="site-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">фото и видео</a></li>
         <li><a href="#">карта штата</a></li>
@@ -21,11 +21,12 @@
       </ul>
     </nav>
   </header>
+  
   <main>
-    <section class="filter">
-      <form action="https://echo.htmlacademy.ru"  method="post">
-        <fieldset>
-         <legend>инфраструктура:</legend>
+    <section class="filter-section">
+      <form class="filter-form" action="https://echo.htmlacademy.ru"  method="post">
+        <fieldset class="filter-infrastructura">
+         <legend class="filter__legend">инфраструктура:</legend>
           <ul>
             <li>
               <input type="checkbox" name="pool" id="filter-pool" checked>
@@ -47,8 +48,8 @@
             </li>
           </ul>
        </fieldset>
-      <fieldset>
-        <legend>тип жилья:</legend>
+      <fieldset class="">
+        <legend class="filter__legend">тип жилья:</legend>
           <ul>
             <li>
               <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -70,8 +71,8 @@
             </li>
           </ul>
        </fieldset>
-       <fieldset>
-         <legend>Стоимость в сутки (Р):</legend>
+       <fieldset class="">
+         <legend class="filter__legend">Стоимость в сутки (Р):</legend>
          <input type="number" class="" id="price-from" value="0">
          <label for="price-from">
             от
@@ -85,7 +86,8 @@
       </form>
     </section>
     <section class="sort">
-      <p class="">найдено <span class="">4</span></p> <span class="">сортировка</span>
+      <p class="sort__find">найдено: <span class="">3</span></p> 
+      <span class="sort__type-title">сортировка:</span>
       <button class="">по цене</button>
       <button class="">по типу</button>
       <button class="">по рейтингу</button>
@@ -93,8 +95,8 @@
       <button aria-label="по возрастанию" class="icon-dir"></button>
     </section>
     <section class="content">
-      <div class="hotel-block">
-        <h3>amara resort & spa</h3>
+      <div class="hotel">
+        <h3><a class="hotel__title" href="#">amara resort & spa</a></h3>
         <img src="img/hotel_1.jpg" alt="amara resort & spa">
         <span class="type">гостиница</span>
         <span class="price">от 4000 р.</span>
@@ -106,10 +108,10 @@
           <span class="rating"></span>
           <span class="rating"></span>
         </div>
-        <span class="button">рейтинг: 8,5</span>
+        <span class="hotel__reiting">рейтинг: 8,5</span>
       </div>
-      <div class="hotel-block">
-        <h3>desert quail inn</h3>
+      <div class="hotel">
+        <h3><a class="hotel__title" href="#">desert quail inn</a></h3>
         <img src="img/hotel_2.jpg" alt="desert quail inn">
         <span class="type">мотель</span>
         <span class="price">от 3000 р.</span>
@@ -120,10 +122,10 @@
           <span class="rating"></span>
           <span class="rating"></span>
         </div>
-        <span class="button">рейтинг: 8,9</span>
+        <span class="hotel__reiting">рейтинг: 8,9</span>
       </div>
-      <div class="hotel-block">
-        <h3>Villas at Poco Diablo</h3>
+      <div class="hotel">
+        <h3><a class="hotel__title" href="#">Villas at Poco Diablo</a></h3>
         <img src="img/hotel_3.jpg" alt="Villas at Poco Diablo">
         <span class="type">апартаменты</span>
         <span class="price">от 2000 р.</span>
@@ -133,12 +135,12 @@
           <span class="rating"></span>
           <span class="rating"></span>
         </div>
-        <span class="button">рейтинг: 9,2</span>
+        <span class="hotel__reiting">рейтинг: 9,2</span>
       </div>
     </section>
   </main>
   <footer>
-    <p>#visitsedona</p>
+    <p class="hashtag">#visitsedona</p>
     <ul class="footer-social">
       <li><a class="social-button" href="#">Вконтакте</a></li>
       <li><a class="social-button" href="#">Фейсбук</a></li>

@@ -1,144 +1,237 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
-
   background-color: #f2f2f2;
 }
 
+a {
+  text-decoration: none;
+}
 
-/* шрифт меню, шрифт формы */
-{
+.visually-hidden {
+  display: none;
+}
+
+.intro {
+  min-height: 508px;
+  width: 1200px;
+  background-image: url(../img/background_photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-navigation,
+.footer-social,
+.order ul,
+.filter-form ul {
+  list-style: none;
+}
+
+.site-navigation a,
+.order {
   color: #000000;
-  font-size: 14px;
   font-weight: 700;
   line-height: 26px;
 }
 
-/* шрифт заголовка */
-{
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.order input {
   color: #000000;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.about__main {
+  color: #333333;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
+
+.about__text {
+  line-height: 26px;
+}
+
 
 /* шрифт заголовка плашки белый */
-{
+
+.board__blue {
   color: #ffffff;
+  background-color: #81b3d2
+}
+
+.board__header,
+.feat__header {
   font-size: 21px;
   font-weight: 700;
 }
 
-
-/* шрифт плашки белый */
-{
-  color: #ffffff;
-}
-
-/* шрифт плашки черный */
-/* типовой */
-
-/* шрифт заголовка плашки черный */
-{
+.board__grey {
   color: #000000;
-  font-size: 21px;
-  font-weight: 700;
+  background-color: ##eeeeee;
 }
 
-/*content head*/ {
+.board__header__black {
+  color: #000000;
+}
+
+.form-title__header {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
 
-/*content text*/
-line-height: 24px;
+.form-title__text {
+  line-height: 24px;
+}
 
-/* form head submit */
-{
+.form-title__button {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
   color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form-title__button:hover {
+  background-color: #604e43;
+}
+
+.form-title__button:active {
+  background-color: #503e33;
+}
+
+.form-title__button:active span {
+  opacity: 0.3;
+}
+
+.order__button {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.order__button:hover {
+  background-color: #669ec0;
+}
+
+.order__button:active {
+background-color: #5496bd;
+}
+
+.order__button:active span {
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  color: #000000;
+  line-height: 26px;
+}
+
+.hashtag {
+  color: #000000;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-
-/* html academy by */
-{
-  color: #000000;
-  line-height: 26px;
-}
-
-/*хештег*/
-{
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-/* ката */
-{
+.filter-form {
   color: #ffffff;
+}
+
+.filter__legend {
   font-size: 16px;
   font-weight: 700;
-  line-height: 21px;
-}
-
-/* каталог форм */
-{
-  color: #ffffff;
 }
 
 /* sort head*/
-{
+
+
+.sort__find {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
+
 /* sort */
-{
+.sort__type-title {
   color: #000000;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
 }
 
+
 /* sort active*/
+
 {
   color: #81b3d2;
 }
 
+
 /* sort disactiv*/
+
 {
   color: #000000;
   opacity: 0.3;
 }
 
-/* hotel head */
-{
+.hotel {
+  width: 1200px;
+  min-height:  150px;
+  background-color: #ffffff
+}
+
+.hotel__title {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-/* reting */
-{
+.hotel__title:hover {
+  color: #81b3d2;
+}
+
+.hotel__title:active {
+  opacity: 0.3;
+}
+
+.hotel__reiting {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
   color: #666666;
 }
 
-/* hotel button */ {
-  color: #ffffff;
-  font-weight: 700;
+.board {
+  width: 400px;
+  min-height: 256px;
 }
