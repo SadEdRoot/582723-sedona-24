@@ -14,6 +14,12 @@ a {
   text-decoration: none;
 }
 
+.button {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -108,7 +114,6 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
 .form-title__button:hover {
@@ -162,6 +167,10 @@ background-color: #5496bd;
 
 .filter-form {
   color: #ffffff;
+  background-image: url(../img/filter_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 .filter__legend {
@@ -169,18 +178,27 @@ background-color: #5496bd;
   font-weight: 700;
 }
 
-/* sort head*/
-
+.filter__button {
+  width: 133px;
+  min-height: 32px;
+  border: 2px solid #ffffff;
+  
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
 
 .sort__find {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+
 }
 
-
-/* sort */
 .sort__type-title {
   color: #000000;
   font-size: 12px;
@@ -188,19 +206,28 @@ background-color: #5496bd;
   line-height: 18px;
 }
 
-
-/* sort active*/
-
-{
-  color: #81b3d2;
+.sort__button {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  border-bottom: 1px dotted #81b3d2;
+  
 }
 
+.sort__button:hover {
+  color: #81b3d2;
+  font-family: "PT Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
 
-/* sort disactiv*/
-
-{
+.sort__button:active {
   color: #000000;
-  opacity: 0.3;
+  border-bottom: 1px dotted transparent;
 }
 
 .hotel {
@@ -230,6 +257,55 @@ background-color: #5496bd;
   background-color: #f2f2f2;
   color: #666666;
 }
+
+.hotel__detail {
+  display: block;
+  text-align: center;
+  width: 110px;
+  min-height: 27px;
+  background-color: #81b3d2;
+  
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hotel__detail:hover {
+  background-color: #669ec0;
+  
+}
+
+.hotel__detail:active {
+  background-color: #5496bd;
+}
+
+.hotel__detail:active span{
+  opacity: 0.3;
+}
+
+.hotel__booking {
+  display: block;
+  text-align: center;
+  width: 142px;
+  min-height: 27px;
+  background-color: #766357;
+  
+  color: #ffffff;
+  font-weight: 700;
+  
+}
+
+.hotel__booking:hover {
+  background-color: #604e43;  
+}
+
+.hotel__booking:active {
+  background-color: #503e33;
+}
+
+.hotel__booking:active span{
+  opacity: 0.3;
+}
+
 
 .board {
   width: 400px;

@@ -85,23 +85,25 @@
          <button type="submit" class="filter__button">показать</button>
       </form>
     </section>
+    
     <section class="sort">
       <p class="sort__find">найдено: <span class="">3</span></p> 
       <span class="sort__type-title">сортировка:</span>
-      <button class="">по цене</button>
-      <button class="">по типу</button>
-      <button class="">по рейтингу</button>
+      <button class="button sort__button">по цене</button>
+      <button class="button sort__button">по типу</button>
+      <button class="button sort__button">по рейтингу</button>
       <button aria-label="по убыванию" class="icon-dir"></button>
       <button aria-label="по возрастанию" class="icon-dir"></button>
     </section>
+    
     <section class="content">
       <div class="hotel">
         <h3><a class="hotel__title" href="#">amara resort & spa</a></h3>
         <img src="img/hotel_1.jpg" alt="amara resort & spa">
         <span class="type">гостиница</span>
         <span class="price">от 4000 р.</span>
-        <a href="" class="button detail">подробнее</a>
-        <a href="" class="button booking">забронировать</a>
+        <a href="" class="hotel__detail"><span>подробнее</span></a>
+        <a href="" class="hotel__booking"><span>забронировать</span></a>
         <div class="">
           <span class="rating"></span>
           <span class="rating"></span>
@@ -115,8 +117,8 @@
         <img src="img/hotel_2.jpg" alt="desert quail inn">
         <span class="type">мотель</span>
         <span class="price">от 3000 р.</span>
-        <a href="" class="button detail">подробнее</a>
-        <a href="" class="button booking">забронировать</a>
+        <a href="" class="hotel__detail"><span>подробнее</span></a>
+        <a href="" class="hotel__booking"><span>забронировать</span></a>
         <div class="">
           <span class="rating"></span>
           <span class="rating"></span>
@@ -129,8 +131,8 @@
         <img src="img/hotel_3.jpg" alt="Villas at Poco Diablo">
         <span class="type">апартаменты</span>
         <span class="price">от 2000 р.</span>
-        <a href="" class="button detail">подробнее</a>
-        <a href="" class="button booking">забронировать</a>
+        <a href="" class="hotel__detail"><span>подробнее</span></a>
+        <a href="" class="hotel__booking"><span>забронировать</span></a>
         <div class="">
           <span class="rating"></span>
           <span class="rating"></span>
@@ -142,10 +144,11 @@
   <footer>
     <p class="hashtag">#visitsedona</p>
     <ul class="footer-social">
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Youtube</a></li>
+      <li><a class="social-button vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li><a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
     </ul>
+
     <p class="footer-copyright"> website by
       <a href="https://htmlacademy.ru/intensive/htmlcss">
       </a>
