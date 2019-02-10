@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"> </head>
+
+<body>
+  <div class="container">
     <header class="main-header">
       <a class="logo" href=""><img src="img/logo.png" alt="City of Sedona"></a>
       <nav class="main-menu">
         <ul class="site-navigation">
-          <li><a href="">информация</a></li>
-          <li><a href="">фото и видео</a></li>
-          <li><a href="">карта штата</a></li>
-          <li><a href="catalog.html">гостиница</a></li>
+          <li class="site-navigation__button"><a href="">информация</a></li>
+          <li class="site-navigation__button"><a href="">фото и видео</a></li>
+          <li class="site-navigation__button"><a href="">карта штата</a></li>
+          <li class="site-navigation__button"><a href="catalog.html">гостиница</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <div class="intro">
-        <h1 class="visually-hidden">City of Sedona</h1>
-        <img src="img/welcome.png" alt="welcome to the gorgeous">
-      </div>
+        <h1 class="visually-hidden">City of Sedona</h1> <img src="img/welcome.png" alt="welcome to the gorgeous"> </div>
       <section class="content">
         <div class="about">
           <p class="about__main">седона - небольшой городок в аризоне заслуживающий большего!</p>
           <p class="about__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
         </div>
-        <div class="">
-          <div class="board board__blue">
-            <h3 class="board__header">Настояший городок</h3>
+        <div class="board">
+          <div class=" board__block__blue">
+            <h3 class="board__header__blue">Настояший городок</h3>
             <p>- №1 -</p>
             <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <img src="img/view_1_town.jpg" alt="фото города">
-        </div>
-
+          </div> 
+          <img src="img/view_1_town.jpg" alt="фото города"> </div>
         <div class="features">
           <div class="feat">
             <h3 class="feat__header">жильё</h3>
@@ -52,87 +50,81 @@
             <p class="feat__text">не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div>
+        <div class="board"> 
           <img src="img/view_2_bridge.jpg" alt="мост дьявола">
-          <div class="board board__blue">
-            <h3 class="board__header">там есть мост дьявола</h3>
+          <div class="board__block__blue">
+            <h3 class="board__header__blue">там есть мост дьявола</h3>
             <p>- №2 -</p>
             <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
           </div>
         </div>
-
-        <div>
-          <div class="board board__grey">
-              <h3 class="board__header board__header__black">небольшая площадь</h3>
-              <p>- №3 -</p>
-              <p>все достопримечательности находятся очень близко</p>
+        <div class="board">
+          <div class="board__block__grey">
+            <h3 class="board__header__grey">небольшая площадь</h3>
+            <p>- №3 -</p>
+            <p>все достопримечательности находятся очень близко</p>
           </div>
-          <div class="board board__grey">
-              <h3 class="board__header board__header__black">красивая дорога</h3>
-              <p>- №4 -</p>
-              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+          <div class="board__block__grey">
+            <h3 class="board__header__grey">красивая дорога</h3>
+            <p>- №4 -</p>
+            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
           </div>
-          <div class="board board__grey">
-              <h3 class="board__header board__header__black">мало туристов</h3>
-              <p>- №5 -</p>
-              <p>большинство едет в гранд каньон и толпится там</p>
+          <div class="board__block__grey">
+            <h3 class="board__header__grey">мало туристов</h3>
+            <p>- №5 -</p>
+            <p>большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
       </section>
-
-    <section class="hotel-form">
-      <div class="form-title">
-        <h3 class="form-title__header">заинтересовались?</h3>
-        <p class="form-title__text">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="form-title__button"><span>поиск гостиницы в седоне</span></button>
-      </div>
-      <div class="map">
-        <form class="order" action="https://echo.htmlacademy.ru"  method="post">
-          <ul >
-            <li>
-              <label for="checkin_date">Дата заезда:</label>
-              <input name="checkin_date" type="text" id="checkin_date" placeholder="24 апреля 2017" value="24 апреля 2017">
-              <button aria-label="Выбрать дату заезда" class="order__calendar-icon"></button>
-            </li>
-            <li>
-              <label for="checkout_date">Дата выезда:</label>
-              <input name="checkout_date" type="text" id="checkout_date" placeholder="4 июля 2017" value="4 июля 2017">
-              <button aria-label="Выбрать дату выезда" class="order__calendar-icon"></button>
-            </li>
-            <li>
-              <label for="adult">взрослые:</label>
-              <input name="adult" type="number" id="adult" placeholder="2" value="2">
-              <button aria-label="Уменьшить количество взрослых" type="button" class="order__adult-minus icon-minus">-</button>
-              <button aria-label="Увеличить количество взрослых" type="button" class="order__adult-plus icon-plus">+</button>
-            </li>
-            <li>
-              <label for="children">дети:</label>
-              <input name="children" type="number" id="children" placeholder="0" value="0">
-              <button aria-label="Уменьшить количество детей" type="button" class="order__children-minus icon-minus">-</button>
-              <button aria-label="Увеличить количество детей" type="button" class="order__children-plus icon-plus">+</button>
-            </li>
-            <button type="submit" class="button order__button"><span>найти</span></button>
-          </ul>
-        </form>
-      </div>
-    </section>
+      <section class="hotel-form">
+        <div class="form-title">
+          <h3 class="form-title__header">заинтересовались?</h3>
+          <p class="form-title__text">укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="form-title__button"><span>поиск гостиницы в седоне</span></button>
+        </div>
+        <div class="map">
+          <form class="order" action="https://echo.htmlacademy.ru" method="post">
+            <ul>
+              <li>
+                <label for="checkin_date">Дата заезда:</label>
+                <input name="checkin_date" type="text" id="checkin_date" placeholder="24 апреля 2017" value="24 апреля 2017">
+                <button aria-label="Выбрать дату заезда" class="order__calendar-icon"></button>
+              </li>
+              <li>
+                <label for="checkout_date">Дата выезда:</label>
+                <input name="checkout_date" type="text" id="checkout_date" placeholder="4 июля 2017" value="4 июля 2017">
+                <button aria-label="Выбрать дату выезда" class="order__calendar-icon"></button>
+              </li>
+              <li>
+                <label for="adult">взрослые:</label>
+                <input name="adult" type="number" id="adult" placeholder="2" value="2">
+                <button aria-label="Уменьшить количество взрослых" type="button" class="order__adult-minus icon-minus">-</button>
+                <button aria-label="Увеличить количество взрослых" type="button" class="order__adult-plus icon-plus">+</button>
+              </li>
+              <li>
+                <label for="children">дети:</label>
+                <input name="children" type="number" id="children" placeholder="0" value="0">
+                <button aria-label="Уменьшить количество детей" type="button" class="order__children-minus icon-minus">-</button>
+                <button aria-label="Увеличить количество детей" type="button" class="order__children-plus icon-plus">+</button>
+              </li>
+              <button type="submit" class="button order__button"><span>найти</span></button>
+            </ul>
+          </form>
+        </div>
+      </section>
     </main>
-
     <footer>
-
       <p class="hashtag">#visitsedona</p>
-
-    <ul class="footer-social">
-      <li><a class="social-button vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-      <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-      <li><a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
-    </ul>
-
-      <p class="footer-copyright">
-        website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-          </a>
+      <ul class="footer-social">
+        <li class="footer-social__button"><a class="vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="footer-social__button"><a class="facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="footer-social__button"><a class="youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
+      </ul>
+      <p class="footer-copyright"> website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss"> </a>
       </p>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
