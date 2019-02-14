@@ -25,7 +25,7 @@
 
     <main>
       <section class="filter-section">
-        <form class="filter-form" action="https://echo.htmlacademy.ru"  method="post">
+        <form class="filter" action="https://echo.htmlacademy.ru"  method="post">
           <fieldset class="">
             <legend class="filter__legend">инфраструктура:</legend>
             <ul>
@@ -74,11 +74,11 @@
          </fieldset>
          <fieldset class="">
            <legend class="filter__legend">Стоимость в сутки (Р):</legend>
-           <input class="filter-form__price-window" type="number" class="" id="price-from" value="0">
+           <input class="filter__price-window" type="number" class="" id="price-from" value="0">
            <label  for="price-from">
               от
             </label>
-           <input class="filter-form__price-window" type="number" class="" id="price-to" value="3000">
+           <input class="filter__price-window" type="number" class="" id="price-to" value="3000">
            <label for="price-to">
               до
             </label>
@@ -101,8 +101,8 @@
         <div class="hotel">
           <h3><a class="hotel__title" href="#">amara resort & spa</a></h3>
           <img src="img/hotel_1.jpg" alt="amara resort & spa">
-          <span class="type">гостиница</span>
-          <span class="price">от 4000 р.</span>
+          <span>гостиница</span>
+          <span>от 4000 р.</span>
           <a href="" class="hotel__detail"><span>подробнее</span></a>
           <a href="" class="hotel__booking"><span>забронировать</span></a>
           <div class="">
@@ -116,8 +116,8 @@
         <div class="hotel">
           <h3><a class="hotel__title" href="#">desert quail inn</a></h3>
           <img src="img/hotel_2.jpg" alt="desert quail inn">
-          <span class="type">мотель</span>
-          <span class="price">от 3000 р.</span>
+          <span>мотель</span>
+          <span>от 3000 р.</span>
           <a href="" class="hotel__detail"><span>подробнее</span></a>
           <a href="" class="hotel__booking"><span>забронировать</span></a>
           <div class="">
@@ -130,8 +130,8 @@
         <div class="hotel">
           <h3><a class="hotel__title" href="#">Villas at Poco Diablo</a></h3>
           <img src="img/hotel_3.jpg" alt="Villas at Poco Diablo">
-          <span class="type">апартаменты</span>
-          <span class="price">от 2000 р.</span>
+          <span>апартаменты</span>
+          <span>от 2000 р.</span>
           <a href="" class="hotel__detail"><span>подробнее</span></a>
           <a href="" class="hotel__booking"><span>забронировать</span></a>
           <div class="">
@@ -145,14 +145,12 @@
     <footer>
       <p class="hashtag">#visitsedona</p>
       <ul class="footer-social">
-        <li><a class="social-button vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
+        <li class="footer-social__link"><a class="vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="footer-social__link"><a class="facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="footer-social__link"><a class="youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-
       <p class="footer-copyright"> website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-        </a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"> </a>
       </p>
     </footer>
   </div>
