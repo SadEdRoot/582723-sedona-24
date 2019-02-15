@@ -42,16 +42,27 @@ a {
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
 }
-
-.intro {
-  min-height: 508px;
-  width: 1200px;
-  background-image: url(../img/background_photo.jpg);
-  background-color: #7F7B81;
-  background-repeat: no-repeat;
-  background-position: center;
+.main-header {
+  position: relative;
 }
 
+.logo {
+  position: absolute;
+  left: 530px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation__link {
+  width: 239px;
+  height: 56px;
+  text-align: center;
+}
 .site-navigation,
 .footer-social,
 .order ul,
@@ -78,21 +89,53 @@ a {
   color: #766357;
 }
 
+.intro {
+  box-sizing: border-box;
+  min-height: 508px;
+  width: 1200px;
+  background-image: url(../img/background_photo.jpg);
+  background-color: #7F7B81;
+  background-repeat: no-repeat;
+  background-position: 0 -83px;
+  padding-top: 76px;
+}
+
+.intro__image {
+  width: 459px;
+  height: 353px;
+  display: block;
+  margin: 0 auto;
+}
+
 .about {
   line-height: 26px;
+  text-align: center;
+  
+  min-height: 215px;
 }
 
 .about__main {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
+  /*временно*/
+  margin: 0px;
 }
 
+.features {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
-.features__block__blue,
-.features__block__grey,
+.features__block--blue,
+.features__block--grey,
 .features__block {
   width: 400px;
+    text-align: center;
+  
+  /* Временно для сетки */
+  min-height: 256px;
 }
 
 .features__block--blue {
