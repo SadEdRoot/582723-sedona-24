@@ -15,17 +15,17 @@
       <a class="logo" href="index.html"><img src="img/logo.png" alt="City of Sedona"></a>
       <nav class="main-menu">
         <ul class="site-navigation">
-          <li class="site-navigation__link"><a href="#">информация</a></li>
-          <li class="site-navigation__link"><a href="#">фото и видео</a></li>
-          <li class="site-navigation__link"><a href="#">карта штата</a></li>
-          <li class="site-navigation__active-page"><a href="#">гостиница</a></li>
+          <li class="site-navigation__link site-navigation__link--text-left"><a href="">информация</a></li>
+          <li class="site-navigation__link site-navigation__link--text-left"><a href="">фото и видео</a></li>
+          <li class="site-navigation__link site-navigation__link--text-right"><a href="">карта штата</a></li>
+          <li class="site-navigation__link site-navigation__link--text-right site-navigation__active-page"><a href="#">гостиница</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
-      <section class="filter-section">
+      <section>
         <form class="filter" action="https://echo.htmlacademy.ru"  method="post">
+         <div class="filter__field">
           <fieldset class="">
             <legend class="filter__legend">инфраструктура:</legend>
             <ul>
@@ -49,7 +49,7 @@
               </li>
             </ul>
          </fieldset>
-        <fieldset class="">
+          <fieldset class="">
           <legend class="filter__legend">тип жилья:</legend>
             <ul>
               <li>
@@ -72,7 +72,9 @@
               </li>
             </ul>
          </fieldset>
-         <fieldset class="">
+         </div>
+         <div>
+          <fieldset class="">
            <legend class="filter__legend">Стоимость в сутки (Р):</legend>
            <input class="filter__price-window" type="number" class="" id="price-from" value="0">
            <label  for="price-from">
@@ -83,7 +85,10 @@
               до
             </label>
          </fieldset>
-           <button type="submit" class="filter__button">показать</button>
+          <button type="submit" class="filter__button">показать</button>
+         </div>
+       
+
         </form>
       </section>
 
@@ -142,14 +147,14 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p class="hashtag">#visitsedona</p>
-      <ul class="footer-social">
+    <footer class="main-footer">
+      <p class="main-footer__flex-item hashtag">#visitsedona</p>
+      <ul class="main-footer__flex-item footer-social">
         <li class="footer-social__link"><a class="vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         <li class="footer-social__link"><a class="facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
         <li class="footer-social__link"><a class="youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <p class="footer-copyright"> website by
+      <p class="main-footer__flex-item footer-copyright"> website by
         <a href="https://htmlacademy.ru/intensive/htmlcss"> </a>
       </p>
     </footer>
