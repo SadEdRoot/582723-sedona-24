@@ -157,12 +157,11 @@ a {
   
 }
 
-.features__block--blue,
-.features__block--grey,
 .features__block {
   width: 400px;
   text-align: center;
-  
+  padding-left: 60px;
+  padding-right: 60px;
   /* Временно для сетки */
   min-height: 256px;
 }
@@ -176,10 +175,18 @@ a {
   background-color: #eeeeee;
 }
 
-.features__header--blue,
-.features__header--black {
+.features__block p {
+  margin: 21px 0;
+}
+
+.features__header {
   font-size: 21px;
   font-weight: 700;
+  margin-top: 47px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
 }
 
 .features__header--black {
@@ -195,10 +202,13 @@ a {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin-top: 50px;
+  margin-bottom: 24px;
 }
 
 .form-title__text {
   line-height: 24px;
+  margin-bottom: 46px;
 }
 
 .form-title__button {
@@ -225,12 +235,11 @@ a {
 }
 
 .map {
-  position: relative;
-  min-height: 473px;
+  min-height: 594px;
   background-image: url(../img/map.jpg);
   background-color: #7F7B81;
   background-repeat: no-repeat;
-  background-clip: 
+  margin-bottom: -120px;
 }
 
 .order {
@@ -307,7 +316,6 @@ background-color: #5496bd;
 }
 
 
-
 .filter {
   color: #ffffff;
   background-image: url(../img/filter_background.jpg);
@@ -361,6 +369,19 @@ background-color: #5496bd;
   text-transform: uppercase;
 }
 
+.sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 72px;
+  min-height: 86px;
+}
+
+.sort__type {
+  display: flex;
+  align-items: center;
+  
+}
+
 .sort__counter {
   color: #000000;
   font-size: 21px;
@@ -407,8 +428,28 @@ background-color: #5496bd;
 }
 
 .hotel {
-  width: 1200px;
   min-height:  150px;
+
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 72px;
+}
+
+.hotel__info {
+  position: relative;
+  padding-left: 165px;
+}
+
+.hotel__image {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.hotel__header {
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
 
 .hotel__title {
@@ -416,6 +457,7 @@ background-color: #5496bd;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+
 }
 
 .hotel__title:hover {
@@ -424,6 +466,10 @@ background-color: #5496bd;
 
 .hotel__title:active {
   opacity: 0.3;
+}
+
+.hotel__price {
+  padding-left: 72px;
 }
 
 .hotel__rating {
@@ -484,11 +530,16 @@ background-color: #5496bd;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  background-color: #fefefe;
+  opacity: 0.9;
   min-height: 120px;
 }
 
 .main-footer__flex-item {
   width: 400px;
   text-align: center;
+}
+
+.hashtag {
+  
 }
