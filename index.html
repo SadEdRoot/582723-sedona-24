@@ -25,6 +25,9 @@
       <div class="intro">
         <h1 class="visually-hidden">City of Sedona</h1> 
         <img class="intro__image" src="img/welcome.png" alt="welcome to the gorgeous"> 
+        <svg class="intro__mask" viewBox="0 0 1200 57" width="1200" height="59">
+          <path fill="#fff" d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z"/>
+        </svg>
       </div>
       <section class="content">
         <div class="about">
@@ -88,24 +91,22 @@
           <form class="order" action="https://echo.htmlacademy.ru" method="post">
             <ul>
               <li>
-                <label for="checkin_date">Дата заезда:</label>
-                <input name="checkin_date" type="text" id="checkin_date" placeholder="24 апреля 2017" value="24 апреля 2017">
+                <label class="order__label" for="checkin_date">Дата заезда:</label>
+                <input  class="order__datainput" name="checkin_date" type="text" id="checkin_date" placeholder="24 апреля 2017" value="24 апреля 2017">
                 <button aria-label="Выбрать дату заезда" class="order__calendar-icon"></button>
               </li>
               <li>
-                <label for="checkout_date">Дата выезда:</label>
-                <input name="checkout_date" type="text" id="checkout_date" placeholder="4 июля 2017" value="4 июля 2017">
+                <label class="order__label" for="checkout_date">Дата выезда:</label>
+                <input class="order__datainput" name="checkout_date" type="text" id="checkout_date" placeholder="4 июля 2017" value="4 июля 2017">
                 <button aria-label="Выбрать дату выезда" class="order__calendar-icon"></button>
               </li>
               <li>
-                <label for="adult">взрослые:</label>
-                <input name="adult" type="number" id="adult" placeholder="2" value="2">
+                <label class="order__label" for="adult">взрослые:</label>
+                <input class="order__countinput"  name="adult" type="number" id="adult" placeholder="2" value="2">
                 <button aria-label="Уменьшить количество взрослых" type="button" class="oreder__icon order__adult-minus">-</button>
                 <button aria-label="Увеличить количество взрослых" type="button" class="oreder__icon order__adult-plus">+</button>
-              </li>
-              <li>
                 <label for="children">дети:</label>
-                <input name="children" type="number" id="children" placeholder="0" value="0">
+                <input class="order__countinput" name="children" type="number" id="children" placeholder="0" value="0">
                 <button aria-label="Уменьшить количество детей" type="button" class="oreder__icon order__children-minus">-</button>
                 <button aria-label="Увеличить количество детей" type="button" class="oreder__icon order__children-plus">+</button>
               </li>
