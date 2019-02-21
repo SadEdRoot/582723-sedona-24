@@ -10,6 +10,15 @@ body {
   background-color: #f2f2f2;
 }
 
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -228,7 +237,6 @@ a {
 
 .form-title__text {
   max-width: 500px;
-  
   line-height: 24px;
   margin-left: auto;
   margin-right: auto;
@@ -244,6 +252,8 @@ a {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  border: none;
+  outline: none;
 }
 
 .form-title__button:hover {
@@ -278,6 +288,10 @@ a {
   
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
 }
 
@@ -286,22 +300,57 @@ a {
   padding: 0;
 }
 
+.order li {
+  margin-bottom: 29px;
+}
+
 .order__label {
-  display: inline-block;
   width: 112px;
+  padding-top: 7px;
 }
 
 .order__datainput {
-  width: 342px;
- /* display: inline-block;*/
+  width: 346px;
+
+}
+
+.order__stripe {
+  display: flex;
+  justify-content: space-between;
 }
 
 .order__countinput {
   width: 114px;
+  text-align: center;
+}
+
+.order__input-conteiner {
+  position: relative;
+}
+
+.order__calendar-icon {
+  position: absolute;
+  border: none;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  outline: none;
+}
+
+.order__calendar-icon:hover {
+  
+}
+
+.order__calendar-icon:active {
+  
 }
 
 .order input {
   box-sizing: border-box;
+  min-height: 38px;
   color: #000000;
   font-weight: 700;
   line-height: 26px;
@@ -310,7 +359,8 @@ a {
   background-color: #f2f2f2;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 12px;
+  outline: none;
+
 }
 
 .order input:hover {
@@ -334,6 +384,8 @@ a {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  outline: none;
+
 }
 
 .order__button:hover {
@@ -349,10 +401,20 @@ background-color: #5496bd;
 }
 
 .oreder__icon {
+  position: absolute;
   width: 38px;
   height: 38px;
-  background-color: #f2f2f2;
+  top: 0;
+  
+  background-color: transparent;
   border: none;
+  outline: none;
+}
+.order__icon--minus {
+  left: 0;
+}
+.order__icon--plus {
+  right: 0;
 }
 
 .footer-copyright {
@@ -378,10 +440,40 @@ background-color: #5496bd;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  
-  /*временно*/
-  min-height: 217px;
-  
+  padding-top: 28px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 6px;
+}
+
+.filter_fieldset {
+  border: none;
+  width: 254px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__checkbox-label {
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.filter__checkbox-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+
+.filter__checkbox:checked +
+.filter__checkbox-label::before {
+  background-image: url(../img/checkbox-on.svg);
 }
 
 .filter__field {
@@ -391,6 +483,7 @@ background-color: #5496bd;
 .filter__legend {
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .filter__button {
