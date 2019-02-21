@@ -24,14 +24,11 @@
     <main>
       <div class="intro">
         <h1 class="visually-hidden">City of Sedona</h1> 
-        <img class="intro__image" src="img/welcome.png" alt="welcome to the gorgeous"> 
-        <svg class="intro__mask" viewBox="0 0 1200 57" width="1200" height="59">
-          <path fill="#fff" d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z"/>
-        </svg>
+        <img class="intro__image" src="img/welcome.png" alt="welcome to the gorgeous">        
       </div>
       <section class="content">
         <div class="about">
-          <p class="about__main">седона — небольшой городок в аризоне, <br> заслуживающий большего!</p>
+          <p class="about__main">седона — небольшой городок в аризоне, заслуживающий большего!</p>
           <p class="about__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
         </div>
         <div class="features">
@@ -84,7 +81,7 @@
       <section class="hotel-form">
         <div class="form-title">
           <h3 class="form-title__header">заинтересовались?</h3>
-          <p class="form-title__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="form-title__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="form-title__button"><span>поиск гостиницы в седоне</span></button>
         </div>
         <div class="map">
@@ -101,14 +98,22 @@
                 <button aria-label="Выбрать дату выезда" class="order__calendar-icon"></button>
               </li>
               <li>
-                <label class="order__label" for="adult">взрослые:</label>
-                <input class="order__countinput"  name="adult" type="number" id="adult" placeholder="2" value="2">
-                <button aria-label="Уменьшить количество взрослых" type="button" class="oreder__icon order__adult-minus">-</button>
-                <button aria-label="Увеличить количество взрослых" type="button" class="oreder__icon order__adult-plus">+</button>
-                <label for="children">дети:</label>
-                <input class="order__countinput" name="children" type="number" id="children" placeholder="0" value="0">
-                <button aria-label="Уменьшить количество детей" type="button" class="oreder__icon order__children-minus">-</button>
-                <button aria-label="Увеличить количество детей" type="button" class="oreder__icon order__children-plus">+</button>
+                <div>
+                  <label class="order__label" for="adult">взрослые:</label>
+                  <div>
+                    <button aria-label="Уменьшить количество взрослых" type="button" class="oreder__icon order__adult-minus">-</button>
+                    <input class="order__countinput"  name="adult" type="number" id="adult" placeholder="2" value="2">
+                    <button aria-label="Увеличить количество взрослых" type="button" class="oreder__icon order__adult-plus">+</button>
+                  </div>     
+                </div>
+                <div>
+                  <label for="children">дети:</label>
+                  <div>
+                    <button aria-label="Уменьшить количество детей" type="button" class="oreder__icon order__children-minus">-</button>
+                    <input class="order__countinput" name="children" type="number" id="children" placeholder="0" value="0">
+                    <button aria-label="Увеличить количество детей" type="button" class="oreder__icon order__children-plus">+</button>
+                  </div>
+                </div>
               </li>
               <button type="submit" class="button order__button"><span>найти</span></button>
             </ul>

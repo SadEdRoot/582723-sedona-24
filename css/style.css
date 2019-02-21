@@ -51,6 +51,7 @@ a {
   left: 50%;
     transform: translateX(-50%);
   top: -1px;
+  z-index: 1;
 }
 
 .site-navigation {
@@ -120,7 +121,18 @@ a {
   background-repeat: no-repeat;
   background-position: 0 -83px;
   padding-top: 76px;
-  padding-bottom: 79px;     
+  padding-bottom: 79px;
+}
+
+.intro::after {
+  position: absolute;
+  content: "";
+  width: 1201px;
+  height: 59px;
+  bottom: -2px;
+  left: 0;
+  background-image: url(../img/intro-mask.svg);
+  background-repeat: no-repeat;
 }
 
 .intro__image {
@@ -144,16 +156,18 @@ a {
 
 
 .about__main {
+  max-width: 450px;
   color: #000000;
   font-size: 21px;
   font-weight: 700;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   margin-bottom: 27px;
 }
 
 .about__text {
-  margin: 0;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .features {
@@ -213,7 +227,11 @@ a {
 }
 
 .form-title__text {
+  max-width: 500px;
+  
   line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 46px;
 }
 
