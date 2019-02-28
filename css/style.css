@@ -73,27 +73,29 @@ img {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .site-navigation__link {
   width: 25%;
-  height: 56px;
   box-sizing: border-box;
   padding-top: 14px;
   padding-right: 12px;
   padding-left: 12px;
+  padding-bottom: 16px;
   text-align: left;
 }
 
-.site-navigation__link:nth-child(n + 3) {
+.site-navigation__link:nth-child(4n-1) {
   text-align: right;
 }
 
-.site-navigation__link:last-child {
+.site-navigation__link:nth-child(4n) {
   padding-right: 72px;
+  text-align: right;
 }
 
-.site-navigation__link:first-child {
+.site-navigation__link:nth-child(4n + 1) {
   padding-left: 72px;
 }
 
@@ -297,12 +299,12 @@ img {
   line-height: 24px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 }
 
 .form-title__button {
   width: 568px;
-  height: 86px;
+  padding: 30px 10px;
   background-color: #766357;
   color: #ffffff;
   font-size: 21px;
@@ -326,6 +328,7 @@ img {
 }
 
 .map {
+  position: relative;
   min-height: 594px;
   background-image: url(../img/map.jpg);
   background-color: #7F7B81;
@@ -337,7 +340,7 @@ img {
   position: absolute;
   box-sizing: border-box;
   width: 568px;
-  height: 395px;
+  min-height: 395px;
   padding: 55px;
   
   left: 50%;
@@ -364,6 +367,11 @@ img {
 .order__label {
   width: 112px;
   padding-top: 7px;
+}
+
+.order__label--child {
+  padding-left: 50px;
+  box-sizing: border-box;
 }
 
 .order__datainput {
@@ -437,7 +445,7 @@ img {
 
 .order__button {
   width: 458px;
-  height: 58px;
+  padding: 16px;
   background-color: #81b3d2;
   
   color: #ffffff;
@@ -471,12 +479,27 @@ background-color: #5496bd;
   background-color: transparent;
   border: none;
   outline: none;
+  color: #a9a9a9;
+  
 }
 .order__icon--minus {
   left: 0;
 }
+
 .order__icon--plus {
   right: 0;
+}
+
+.order__icon:hover {
+  color: #000000;
+}
+
+.order__icon:active {
+  color: #81b3d2;
+}
+
+.order__icon svg {
+  fill: currentColor;
 }
 
 .footer-copyright {
@@ -518,7 +541,7 @@ background-color: #5496bd;
 }
 
 .filter__fieldset--right {
-  width: 330px;
+  width: 318px;
 }
 
 
@@ -588,7 +611,6 @@ background-color: #5496bd;
 
 .filter__price-field {
   position: relative;
-  height: 36px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   font-size: 0;
@@ -610,14 +632,14 @@ background-color: #5496bd;
 .filter__price-field label{
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
   cursor: pointer;
 }
 
 .filter__price-field .price-min,
 .filter__price-field .price-max {
-  width: 90px;
+  width: 85px;
   padding-left: 65px;
 }
 
@@ -668,6 +690,7 @@ background-color: #5496bd;
 
 .range-toggle:hover {
   background: #1c4f80;
+  transform: scale(1.1);
 }
 
 .sort {
@@ -681,6 +704,7 @@ background-color: #5496bd;
 .sort__type {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   
 }
 
@@ -733,6 +757,27 @@ background-color: #5496bd;
   color: #81b3d2;
   border-bottom: 1px dotted transparent;
 }
+
+.icon-dir {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.icon-dir:first-child {
+  margin-top: 2px;
+}
+
+.icon-dir:hover path {
+  fill: #000000;
+}
+
+.icon-dir:active path {
+  fill: #81b3d2;
+}
+
 
 .hotel {
   min-height:  150px;
@@ -807,7 +852,7 @@ background-color: #5496bd;
 
 .hotel__rating {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: #f2f2f2;
   color: #666666;
   text-align: center;
@@ -866,6 +911,19 @@ background-color: #5496bd;
   opacity: 0.3;
 }
 
+.hotel__rating-flex {
+  display: flex;
+}
+
+.rating {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 17px;
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -880,6 +938,48 @@ background-color: #5496bd;
   text-align: center;
 }
 
-.hashtag {
-  
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.footer-social__link {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.footer-social__link:hover {
+  background-color: #669ec0;
+}
+
+.footer-social__link:active {
+  background-color: #5496bd;
+}
+
+
+.footer-social__link:active svg{
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  width: 197px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-copyright:hover path {
+  fill: #81b3d2;
+}
+
+.footer-copyright:active path{
+  fill: #bdbbbc;
 }
