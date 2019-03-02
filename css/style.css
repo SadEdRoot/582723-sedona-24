@@ -72,7 +72,6 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -313,6 +312,7 @@ img {
   text-transform: uppercase;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .form-title__button:hover {
@@ -404,6 +404,7 @@ img {
   background-color: transparent;
   outline: none;
   color: #cacaca;
+  cursor: pointer;
 }
 
 .order__calendar-icon:hover {
@@ -455,7 +456,7 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   outline: none;
-
+  cursor: pointer;
 }
 
 .order__button:hover {
@@ -475,6 +476,7 @@ background-color: #5496bd;
   width: 38px;
   height: 38px;
   top: 0;
+  cursor: pointer;
   
   background-color: transparent;
   border: none;
@@ -549,6 +551,7 @@ background-color: #5496bd;
   display: block;
   position: relative;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .filter__checkbox-label::before {
@@ -650,6 +653,7 @@ background-color: #5496bd;
   background-color: transparent;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .filter__range-controls {
@@ -764,6 +768,7 @@ background-color: #5496bd;
   border: none;
   padding: 0;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .icon-dir:first-child {
