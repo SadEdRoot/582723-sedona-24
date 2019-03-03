@@ -68,10 +68,10 @@
               <legend class="filter__legend">Стоимость в сутки (Р):</legend>
               <div class="filter__price-field">
                 <label class="price-min" for="price-from">от
-                <input class="filter__price-window" type="number" class="" id="price-from" value="0">
+                <input class="filter__price-window" type="number" id="price-from" value="0">
                 </label>
                 <label class="price-max" for="price-to">до
-                <input class="filter__price-window" type="number" class="" id="price-to" value="3000">
+                <input class="filter__price-window" type="number" id="price-to" value="3000">
                 </label>
               </div>
               <div class="filter__range-controls">
@@ -87,18 +87,21 @@
         </form>
       </section>
       <section class="sort">
+       <h2 class="visually-hidden">Параметры сортировки</h2>
         <div class="sort__type">
           <p class="sort__counter">найдено: <span class="">3</span></p> 
           <p class="sort__type-title">сортировка:</p>
-          <button class="button sort__button active">по цене</button>
-          <button class="button sort__button">по типу</button>
-          <button class="button sort__button">по рейтингу</button>
+          <div class="sort__box">
+            <button class="button sort__button active"><span>по цене</span></button>
+            <button class="button sort__button"><span>по типу</span></button>
+            <button class="button sort__button"><span>по рейтингу</span></button>
+          </div>
         </div>
         <div>
           <button aria-label="по возрастанию" class="icon-dir">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
           </button>
-          <button aria-label="по убыванию" class="icon-dir">
+          <button aria-label="по убыванию" class="icon-dir active">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
           </button>
         </div>
@@ -106,7 +109,7 @@
       <section class="content">
         <div class="hotel">
           <div class="hotel__info">
-            <img class="hotel__image" src="img/hotel_1.jpg" alt="amara resort & spa" width="135px" height="90px"> 
+            <img class="hotel__image" src="img/hotel_1.jpg" alt="amara resort & spa" width="135" height="90"> 
             <div class="hotel__info-inner">
               <h3 class="hotel__header"><a class="hotel__title" href="#">amara resort & spa</a></h3>
               <div class="hotel__texts">
@@ -130,7 +133,7 @@
         
         <div class="hotel">
           <div class="hotel__info">
-            <img class="hotel__image" src="img/hotel_2.jpg" alt="desert quail inn" width="135px" height="90px">
+            <img class="hotel__image" src="img/hotel_2.jpg" alt="desert quail inn" width="135" height="90">
             <div class="hotel__info-inner">
               <h3 class="hotel__header"><a class="hotel__title" href="#">desert quail inn</a></h3>
               <div class="hotel__texts">
@@ -154,7 +157,7 @@
         </div>
         <div class="hotel">
           <div class="hotel__info">
-            <img class="hotel__image" src="img/hotel_3.jpg" alt="Villas at Poco Diablo" width="135px" height="90px">
+            <img class="hotel__image" src="img/hotel_3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
             <div class="hotel__info-inner">
               <h3 class="hotel__header"><a class="hotel__title" href="#">Villas at Poco Diablo</a></h3> 
               <div class="hotel__texts">
