@@ -333,10 +333,6 @@ img {
   opacity: 0.3;
 }
 
-.form-title__button a {
-  color: #ffffff;
-}
-
 .map {
   position: relative;
   min-height: 594px;
