@@ -210,6 +210,10 @@ img {
   justify-content: stretch;
 }
 
+.features--grey {
+  background-color: #eeeeee;
+}
+
 .features__block {
   width: 280px;
   text-align: center;
@@ -350,17 +354,25 @@ img {
   background-color: #503e33;
 }
 
+.form-title__button:focus {
+  background-color: #604e43;
+}
+
 .form-title__button:active span {
   opacity: 0.3;
 }
 
 .map {
   position: relative;
-  min-height: 594px;
+  /*min-height: 594px;*/
   background-image: url(../img/map.jpg);
   background-color: #7F7B81;
   background-repeat: no-repeat;
   margin-bottom: -120px;
+}
+
+.map--frame {
+  display: block;
 }
 
 @keyframes bounce {
@@ -433,7 +445,6 @@ img {
 
 .order__datainput {
   width: 346px;
-
 }
 
 .order__stripe {
@@ -470,6 +481,10 @@ img {
 
 .order__calendar-icon:active {
   color: #81b3d2;
+}
+
+.order__calendar-icon:focus {
+  color: #000000;
 }
 
 .order__calendar-icon svg {
@@ -512,7 +527,8 @@ img {
   cursor: pointer;
 }
 
-.order__button:hover {
+.order__button:hover,
+.order__button:focus {
   background-color: #669ec0;
 }
 
@@ -550,6 +566,10 @@ img {
 
 .order__icon:active {
   color: #81b3d2;
+}
+
+.order__icon:focus {
+  color: #000000;
 }
 
 .order__icon svg {
@@ -626,6 +646,10 @@ img {
   background-image: url(../img/checkbox-on-disabled.svg);
 }
 
+.filter__checkbox:focus + .filter__checkbox-label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .filter__field {
   display: flex;
 }
@@ -652,9 +676,9 @@ img {
   text-transform: uppercase;
 }
 
-.filter__button:hover {
+.filter__button:hover,
+.filter__button:focus {
   background-color: #ffffff;
-
   color: #000000;
 }
 
@@ -789,13 +813,16 @@ img {
   padding-right: 28px;
   padding-top: 3px;
   outline: none;
+  cursor: pointer;
 }
 
 .sort__button span {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort__button:hover {
+.sort__button:hover,
+.sort__button:focus {
+  opacity: 1;
   color: #81b3d2;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 12px;
@@ -804,6 +831,7 @@ img {
 }
 
 .sort__button:active {
+  opacity: 1;
   color: #000000;
 }
 
@@ -814,6 +842,9 @@ img {
 .sort__button.active {
   opacity: 1;
   color: #81b3d2;
+}
+
+.sort__button.active span{
   border-bottom: 1px dotted transparent;
 }
 
@@ -842,6 +873,10 @@ img {
   fill: #81b3d2;
 }
 
+.icon-dir:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .hotel {
   min-height: 150px;
   box-sizing: border-box;
@@ -851,6 +886,10 @@ img {
   padding: 0 72px;
   padding-top: 24px;
   padding-bottom: 30px;
+}
+
+.hotel:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel__info {
