@@ -154,7 +154,7 @@ img {
   position: relative;
 
   padding-top: 76px;
-  padding-bottom: 79px;
+  padding-bottom: 78px;
 
   background-color: #7F7B81;
   background-image: url(../img/background_photo.jpg);
@@ -170,7 +170,7 @@ img {
   width: 1201px;
   height: 59px;
 
-  content: "";
+  content: '';
 
   background-image: url(../img/intro-mask.svg);
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ img {
 
   max-width: 450px;
   margin: 0px auto;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   padding: 0px;
 
   color: #000000;
@@ -252,7 +252,7 @@ img {
   position: relative;
 
   padding-top: 160px;
-  padding-bottom: 80px;
+  padding-bottom: 83px;
 }
 
 .features__block--image1::after {
@@ -263,7 +263,7 @@ img {
   width: 75px;
   height: 72px;
 
-  content: "";
+  content: '';
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -280,7 +280,7 @@ img {
   width: 74px;
   height: 70px;
 
-  content: "";
+  content: '';
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -297,7 +297,7 @@ img {
   width: 64px;
   height: 76px;
 
-  content: "";
+  content: '';
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -326,7 +326,7 @@ img {
   font-size: 21px;
   font-weight: 700;
 
-  width: 150px;
+  width: 160px;
   margin-top: 0px;
   margin-bottom: 24px;
   margin-left: auto;
@@ -383,20 +383,14 @@ img {
   background-color: #766357;
 }
 
-.form-title__button:hover {
+.form-title__button:hover,
+.form-title__button:focus {
   background-color: #604e43;
 }
 
 .form-title__button:active {
   background-color: #503e33;
-}
-
-.form-title__button:focus {
-  background-color: #604e43;
-}
-
-.form-title__button:active span {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .map {
@@ -580,16 +574,13 @@ img {
   outline: none;
 }
 
-.order__calendar-icon:hover {
+.order__calendar-icon:hover,
+.order__calendar-icon:focus {
   color: #000000;
 }
 
 .order__calendar-icon:active {
   color: #81b3d2;
-}
-
-.order__calendar-icon:focus {
-  color: #000000;
 }
 
 .order__calendar-icon svg {
@@ -647,10 +638,7 @@ img {
 
 .order__button:active {
   background-color: #5496bd;
-}
-
-.order__button:active span {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .order__icon {
@@ -676,16 +664,13 @@ img {
   right: 0;
 }
 
-.order__icon:hover {
+.order__icon:hover,
+.order__icon:focus {
   color: #000000;
 }
 
 .order__icon:active {
   color: #81b3d2;
-}
-
-.order__icon:focus {
-  color: #000000;
 }
 
 .order__icon svg {
@@ -763,7 +748,7 @@ img {
   width: 27px;
   height: 23px;
 
-  content: "";
+  content: '';
 
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
@@ -814,6 +799,7 @@ img {
 
   color: #ffffff;
   border: 2px solid #ffffff;
+  border-radius: 2px;
   outline: none;
   background-color: transparent;
 }
@@ -843,7 +829,7 @@ img {
   width: 2px;
   height: 22px;
 
-  content: "";
+  content: '';
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1000,18 +986,15 @@ img {
   font-weight: 400;
   line-height: 18px;
 
-  padding-top: 3px;
-  padding-right: 28px;
+  margin-top: 3px;
+  margin-right: 28px;
 
   cursor: pointer;
 
   opacity: 0.3;
   color: #000000;
-  outline: none;
-}
-
-.sort__button span {
   border-bottom: 1px dotted #81b3d2;
+  outline: none;
 }
 
 .sort__button:hover,
@@ -1028,18 +1011,12 @@ img {
 .sort__button:active {
   opacity: 1;
   color: #000000;
-}
-
-.sort__button:active span {
   border-bottom: 1px dotted transparent;
 }
 
 .sort__button.active {
   opacity: 1;
   color: #81b3d2;
-}
-
-.sort__button.active span{
   border-bottom: 1px dotted transparent;
 }
 
@@ -1233,10 +1210,7 @@ img {
 
 .hotel__detail:active {
   background-color: #5496bd;
-}
-
-.hotel__detail:active span {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel__booking {
@@ -1259,10 +1233,7 @@ img {
 
 .hotel__booking:active {
   background-color: #503e33;
-}
-
-.hotel__booking:active span {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel__rating-flex {
