@@ -153,7 +153,7 @@ img {
 .intro {
   position: relative;
 
-  padding-top: 76px;
+  padding-top: 77px;
   padding-bottom: 78px;
 
   background-color: #7F7B81;
@@ -205,7 +205,7 @@ img {
 
   max-width: 450px;
   margin: 0px auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0px;
 
   color: #000000;
@@ -252,7 +252,7 @@ img {
   position: relative;
 
   padding-top: 160px;
-  padding-bottom: 83px;
+  padding-bottom: 84px;
 }
 
 .features__block--image1::after {
@@ -291,7 +291,7 @@ img {
 
 .features__block--image3::after {
   position: absolute;
-  top: 59px;
+  top: 56px;
   left: 50%;
 
   width: 64px;
@@ -328,7 +328,7 @@ img {
 
   width: 160px;
   margin-top: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -963,7 +963,7 @@ img {
   line-height: 18px;
 
   padding-top: 3px;
-  padding-right: 34px;
+  padding-right: 39px;
 
   color: #000000;
 }
@@ -987,7 +987,7 @@ img {
   line-height: 18px;
 
   margin-top: 3px;
-  margin-right: 28px;
+  margin-right: 33px;
 
   cursor: pointer;
 
